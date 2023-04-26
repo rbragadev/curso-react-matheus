@@ -1,14 +1,13 @@
-import { useState } from 'react';
 import './App.css';
 
-import ShowUserName from './components/ShowUserName';
+import CarDetails from './components/CarDetails';
 
 function App() {
   //const name = 'Raphael';
-  const [userName] = useState('Maria');
+
   return (
     <div className="App">
-      <ShowUserName name={userName}></ShowUserName>
+      <CarDetails brand="vw" km={100000} color="azul"></CarDetails>
     </div>
   );
 }
