@@ -1,10 +1,14 @@
+import { useState } from 'react';
 import './App.css';
-import ListRender from './components/ListRender';
+
+import ShowUserName from './components/ShowUserName';
 
 function App() {
+  //const name = 'Raphael';
+  const [userName] = useState('Maria');
   return (
     <div className="App">
-      <ListRender></ListRender>
+      <ShowUserName name={userName}></ShowUserName>
     </div>
   );
 }
