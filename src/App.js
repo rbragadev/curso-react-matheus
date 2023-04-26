@@ -1,16 +1,20 @@
 import './App.css';
-import Events from './components/Events';
-import FirstComponent from './components/FirstComponent';
-import MyComponent from './components/MyComponent';
-import TemplateExpressions from './components/TemplateExpressions';
+import City from './assets/city.jpg';
+import ManageData from './components/ManageData';
 
 function App() {
   return (
     <div className="App">
-      <FirstComponent></FirstComponent>
-      <TemplateExpressions></TemplateExpressions>
-      <MyComponent></MyComponent>
-      <Events></Events>
+      <div>
+        <ManageData></ManageData>
+      </div>
+      <div>
+        {/* imagem em public */}
+        <img src="/img1.jpg" alt="paisagem" />
+      </div>
+      <div>
+        <img src={City} alt="cidade" />
+      </div>
     </div>
   );
 }
