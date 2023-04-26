@@ -12,6 +12,7 @@ const ListRender = () => {
     const randomNumber = Math.floor(users.length);
 
     setUsers((previousUsers) => {
+      console.log(previousUsers);
       return previousUsers.filter((user) => randomNumber !== user.id);
     });
   };
