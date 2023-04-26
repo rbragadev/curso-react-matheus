@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="App">
       <CarDetails brand="vw" km={100000} color="azul"></CarDetails>
+      <CarDetails brand="Ford" km={0} color="Vermelha"></CarDetails>
     </div>
   );
 }
