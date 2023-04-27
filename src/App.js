@@ -1,13 +1,15 @@
 import './App.css';
 
-import Container from './components/Container';
+import ExecuteFunction from './components/ExecuteFunction';
+
+function showMessage() {
+  console.log('Evento do componente pai');
+}
 
 function App() {
   return (
     <div className="App">
-      <Container myValue="teste">
-        <p>Este e o conteudo</p>
-      </Container>
+      <ExecuteFunction myFunction={showMessage}></ExecuteFunction>
     </div>
   );
 }
