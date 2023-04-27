@@ -1,15 +1,20 @@
+import { useState } from 'react';
 import './App.css';
 
-import ExecuteFunction from './components/ExecuteFunction';
-
-function showMessage() {
-  console.log('Evento do componente pai');
-}
+import Message from './components/Message';
+import ChangeMessageState from './components/ChangeMessageState';
 
 function App() {
+  const [message, setMessage] = useState('');
+
+  const handleMessage = (msg) => {
+    setMessage(msg);
+  };
+
   return (
     <div className="App">
-      <ExecuteFunction myFunction={showMessage}></ExecuteFunction>
+      <Message msg={message}></Message>
+      <ChangeMessageState handleMessage={handleMessage}></ChangeMessageState>
     </div>
   );
 }
