@@ -2,6 +2,8 @@ import './App.css';
 import MyComponent from './components/MyComponent';
 
 function App() {
+  const n = 9;
+
   return (
     <div className="App">
       <h1>React com CSS</h1>
@@ -18,6 +20,9 @@ function App() {
         >
           Este elemento foi estilizado inline
         </p>
+        <h2 style={n < 10 ? { color: 'purple' } : { color: 'magenta' }}>
+          Css Dinamico
+        </h2>
       </div>
     </div>
   );
