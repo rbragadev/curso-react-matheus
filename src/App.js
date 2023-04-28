@@ -1,8 +1,10 @@
+import { useState } from 'react';
 import './App.css';
 import MyComponent from './components/MyComponent';
 
 function App() {
   const n = 9;
+  const [redTitle] = useState(false);
 
   return (
     <div className="App">
@@ -23,6 +25,7 @@ function App() {
         <h2 style={n < 10 ? { color: 'purple' } : { color: 'magenta' }}>
           Css Dinamico
         </h2>
+        <h2 className={redTitle ? 'red-title' : 'title'}>Classe dinamica</h2>
       </div>
     </div>
   );
