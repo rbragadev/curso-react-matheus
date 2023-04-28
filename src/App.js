@@ -9,6 +9,15 @@ function App() {
         <MyComponent></MyComponent>
         <p>Este paragrafo é do app</p>
         <p className="my-comp-paragraph">Este é o paragrafo 2</p>
+        <p
+          style={{
+            color: 'yellow',
+            backgroundColor: 'black',
+            borderTop: '2px solid red',
+          }}
+        >
+          Este elemento foi estilizado inline
+        </p>
       </div>
     </div>
   );
