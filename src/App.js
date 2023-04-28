@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import MyComponent from './components/MyComponent';
+import Title from './components/Title';
 
 function App() {
   const n = 9;
@@ -26,6 +27,7 @@ function App() {
           Css Dinamico
         </h2>
         <h2 className={redTitle ? 'red-title' : 'title'}>Classe dinamica</h2>
+        <Title />
       </div>
     </div>
   );
