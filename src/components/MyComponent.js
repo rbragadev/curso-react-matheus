@@ -1,6 +1,9 @@
-const MyComponent = () => {  return (
+import './MyComponent.css';
+const MyComponent = () => {
+  return (
     <div>
-      <h2>Estou sendo reaproveitado em varios lugares</h2>
+      <h1>Css de Component</h1>
+      <p>Paragrafo do componente</p>
     </div>
   );
 };
